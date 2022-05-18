@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import {
   ActivityIndicator,
   FlatList,
@@ -9,10 +9,10 @@ import {
 } from 'react-native';
 import gql from 'graphql-tag';
 import AsyncStorage from '@react-native-community/async-storage';
-import { useSubscription } from '@apollo/react-hooks';
-import { relativeTime, displayTime, getToday } from '../libs/day';
-import { useNavigation } from '@react-navigation/native';
-import { useKeepAwake } from 'expo-keep-awake';
+import {useSubscription} from '@apollo/react-hooks';
+import {relativeTime, displayTime, getToday} from '../libs/day';
+import {useNavigation} from '@react-navigation/native';
+import {useKeepAwake} from 'expo-keep-awake';
 import OverlayComponent from './OverlayComponent';
 import JobOverlay from './JobOverly';
 
@@ -24,10 +24,7 @@ const QUEUE_SUBSCRIPTION = gql`
           {cancelled_at: {_is_null: true}}
           {dropped_off_at: {_is_null: true}}
           {reserved_at: {_gte: $day}}
-          {_or: [
-            {driver_id: null},
-            {driver_id: {_eq: $userId}}
-          ]}
+          {_or: [{driver_id: null}, {driver_id: {_eq: $userId}}]}
         ]
       }
       order_by: {reserved_at: desc}
@@ -47,18 +44,27 @@ const QUEUE_SUBSCRIPTION = gql`
 `;
 
 function Item(row) {
-  const navigation = useNavigation()
-  const { id, from, to, tmPrimary, tmSecondary, cancelled_at, driver_id, userID } = row;
+  const navigation = useNavigation();
+  const {
+    id,
+    from,
+    to,
+    tmPrimary,
+    tmSecondary,
+    cancelled_at,
+    driver_id,
+    userID,
+  } = row;
   let relTime = tmPrimary;
   if (cancelled_at !== null) {
     relTime = 'Cancelled';
   } else if (relTime == 'Passed') {
     relTime = 'Anytime now';
   }
-  const isMyJob = driver_id === userID
-  const taken = driver_id !== null && !isMyJob
-  let MyJobStyle = {}
-  if (isMyJob) MyJobStyle = { backgroundColor: '#35fcd733' }
+  const isMyJob = driver_id === userID;
+  const taken = driver_id !== null && !isMyJob;
+  let MyJobStyle = {};
+  if (isMyJob) MyJobStyle = {backgroundColor: '#35fcd733'};
 
   // TODO: recalculate time..
 
@@ -75,7 +81,7 @@ function Item(row) {
       style={[styles.item, MyJobStyle]}>
       <View style={[styles.flexRow]}>
         {from !== null && (
-          <View style={[styles.flexColumn, { flex: 1 }]}>
+          <View style={[styles.flexColumn, {flex: 1}]}>
             <Text style={styles.locationPickup}>
               {taken ? '/taken/' : ''}
               {from}
@@ -83,38 +89,38 @@ function Item(row) {
             <Text style={styles.locationDestination}>→ {to}</Text>
           </View>
         )}
-        <View style={[styles.flexColumn, { textAlign: 'right' }]}>
-          <Text style={[styles.txtPrimary, { alignSelf: 'flex-end' }]}>
+        <View style={[styles.flexColumn, {textAlign: 'right'}]}>
+          <Text style={[styles.txtPrimary, {alignSelf: 'flex-end'}]}>
             {relTime}
           </Text>
-          <Text style={[styles.txtSecondary, { alignSelf: 'flex-end' }]}>
+          <Text style={[styles.txtSecondary, {alignSelf: 'flex-end'}]}>
             {tmSecondary}
           </Text>
         </View>
       </View>
-    </TouchableHighlight >
+    </TouchableHighlight>
   );
 }
 function itemProcess(data) {
   if (!data) return [];
   if (!data.items) return [];
-  return data.items.map(i => ({
+  return data.items.map((i) => ({
     ...i,
     tmPrimary: relativeTime(i.reserved_at),
     tmSecondary: displayTime(i.reserved_at),
   }));
 }
 
-function AvailableJobs({ isWorking }) {
+function AvailableJobs({isWorking}) {
   let intval = React.useRef(null);
   const [user, setUser] = React.useState(null);
   const [items, setItems] = React.useState([]);
   const [tm, setTm] = React.useState(getToday());
   // const [selected, setSelected] = React.useState(new Map());
-  const { loading, error, data } = useSubscription(QUEUE_SUBSCRIPTION, {
+  const {loading, error, data} = useSubscription(QUEUE_SUBSCRIPTION, {
     shouldResubscribe: isWorking,
     skip: !isWorking || user == null,
-    variables: { userId: user ? user.id : null, day: tm },
+    variables: {userId: user ? user.id : null, day: tm},
   });
   /* const onSelect = React.useCallback(
     id => {
@@ -151,9 +157,8 @@ function AvailableJobs({ isWorking }) {
   React.useEffect(() => {
     clearInterval(intval);
     if (!loading && data && data.items) {
-
       if (data.items.length === 0) {
-        setItems([])
+        setItems([]);
       } else {
         setItems(itemProcess(data));
         // need to force re-render time although no update data
@@ -167,13 +172,15 @@ function AvailableJobs({ isWorking }) {
 
   useEffect(() => {
     if (!isWorking) {
-      setItems([])
+      setItems([]);
     }
-  }, [isWorking])
+  }, [isWorking]);
 
-  useKeepAwake()
+  useKeepAwake();
 
-  const emptyText = isWorking ? 'No job at the moment, Yay!' : 'This feed is not live yet'
+  const emptyText = isWorking
+    ? 'No job at the moment, Yay!'
+    : 'This feed is not live yet';
 
   // console.log('available jobs: ', error)
   return (
@@ -185,35 +192,35 @@ function AvailableJobs({ isWorking }) {
       {error && <Text>{error.message}</Text>}
       <FlatList
         data={items}
-        renderItem={({ item }) => (
+        renderItem={({item}) => (
           <Item
             {...item}
             userID={user ? user.id : null}
-          // selected={!selected.get(item.id)}
-          // onSelect={onSelect}
+            // selected={!selected.get(item.id)}
+            // onSelect={onSelect}
           />
         )}
-        keyExtractor={item => `${item.id}`}
+        keyExtractor={(item) => `${item.id}`}
         ListEmptyComponent={() => (
-          <Text style={{ textAlign: 'center', paddingVertical: 20 }}>
+          <Text style={{textAlign: 'center', paddingVertical: 20}}>
             {emptyText}
           </Text>
         )}
       />
-      {loading && <ActivityIndicator style={{ marginVertical: 20 }} />}
+      {loading && <ActivityIndicator style={{marginVertical: 20}} />}
     </View>
   );
 }
 
-
 export default function AvailableJobsContainer() {
-  const [working, setWorking] = useState(false)
-  return <OverlayComponent
-    behind={<AvailableJobs isWorking={working} />}
-    front={<JobOverlay isWorking={working} setWorking={setWorking} />}
-  />
+  const [working, setWorking] = useState(false);
+  return (
+    <OverlayComponent
+      behind={<AvailableJobs isWorking={working} />}
+      front={<JobOverlay isWorking={working} setWorking={setWorking} />}
+    />
+  );
 }
-
 
 const styles = StyleSheet.create({
   container: {
