@@ -60,7 +60,7 @@ function Item({from, to, reserved_at, picked_up_at, dropped_off_at, driver}) {
       if (reservedAt > now) {
         tm = `In ${relativeTime(reserved_at)}`;
       } else if (now > reservedAt) {
-        tm = `At ${reservedAt.format('HH:MM')}`;
+        tm = `At ${reservedAt.format('HH:mm')}`;
       }
       setTm(tm);
     }

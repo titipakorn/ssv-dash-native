@@ -16,10 +16,10 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* SsvDashAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* SsvDashAppTests.m */; };
-		50A90FF1DDEF22918DCE136D /* libPods-SsvDashApp-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0CA4E373A333C3BA6188F5D /* libPods-SsvDashApp-tvOSTests.a */; };
-		6F872518A8DD976BBF46D675 /* libPods-SsvDashApp-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A912072CD5574D69789218 /* libPods-SsvDashApp-tvOS.a */; };
-		8FBEA994B4024A9CE7F62F8B /* libPods-SsvDashApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0141C620AE6F5D4F03C698C8 /* libPods-SsvDashApp.a */; };
-		C97C11639798393AD4F3556C /* libPods-SsvDashApp-SsvDashAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F16B38535074E18D96E45E19 /* libPods-SsvDashApp-SsvDashAppTests.a */; };
+		87D41B8D5DD8B7EB11809201 /* libPods-SsvDashApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9DCA50AD3DB9BDCD19390BB /* libPods-SsvDashApp.a */; };
+		9679CFA139F0CF5EAF805465 /* libPods-SsvDashApp-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55DD4EC2E4D6B71C38AE62D0 /* libPods-SsvDashApp-tvOS.a */; };
+		C58E5B2EF24C2F9984F0F7F1 /* libPods-SsvDashApp-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E4ECC5C702AE9AD6F3E880 /* libPods-SsvDashApp-tvOSTests.a */; };
+		CDDC7734B709FC16D0FD8BEA /* libPods-SsvDashApp-SsvDashAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 658B6CA31407600FA5947DA2 /* libPods-SsvDashApp-SsvDashAppTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +44,8 @@
 		00E356EE1AD99517003FC87E /* SsvDashAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SsvDashAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* SsvDashAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SsvDashAppTests.m; sourceTree = "<group>"; };
-		0141C620AE6F5D4F03C698C8 /* libPods-SsvDashApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SsvDashApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03B9CDC35FA573EF254CB4B5 /* Pods-SsvDashApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SsvDashApp.release.xcconfig"; path = "Target Support Files/Pods-SsvDashApp/Pods-SsvDashApp.release.xcconfig"; sourceTree = "<group>"; };
+		0D19A83C171A2BCCF0FFEAEF /* Pods-SsvDashApp-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SsvDashApp-tvOS.release.xcconfig"; path = "Target Support Files/Pods-SsvDashApp-tvOS/Pods-SsvDashApp-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* SsvDash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SsvDash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = SsvDashApp/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = SsvDashApp/AppDelegate.m; sourceTree = "<group>"; };
@@ -52,22 +53,21 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = SsvDashApp/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = SsvDashApp/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = SsvDashApp/main.m; sourceTree = "<group>"; };
-		18A912072CD5574D69789218 /* libPods-SsvDashApp-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SsvDashApp-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1FB0CBBC82CFF62396CB21E1 /* Pods-SsvDashApp-SsvDashAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SsvDashApp-SsvDashAppTests.debug.xcconfig"; path = "Target Support Files/Pods-SsvDashApp-SsvDashAppTests/Pods-SsvDashApp-SsvDashAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1406FB5B98F3B0A7E613BEF4 /* Pods-SsvDashApp-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SsvDashApp-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-SsvDashApp-tvOSTests/Pods-SsvDashApp-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1E4F165E7A4EDBEBCB88B85A /* Pods-SsvDashApp-SsvDashAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SsvDashApp-SsvDashAppTests.release.xcconfig"; path = "Target Support Files/Pods-SsvDashApp-SsvDashAppTests/Pods-SsvDashApp-SsvDashAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* SsvDashApp-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SsvDashApp-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* SsvDashApp-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SsvDashApp-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D16AE8B1535BE5C70868F7B /* Pods-SsvDashApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SsvDashApp.debug.xcconfig"; path = "Target Support Files/Pods-SsvDashApp/Pods-SsvDashApp.debug.xcconfig"; sourceTree = "<group>"; };
+		2DC31AC3A49F352FEE1C264B /* Pods-SsvDashApp-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SsvDashApp-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-SsvDashApp-tvOS/Pods-SsvDashApp-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		2F3139D0266621B2007ABA5B /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		308BD61CFF706FE3750BF2FC /* Pods-SsvDashApp-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SsvDashApp-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-SsvDashApp-tvOSTests/Pods-SsvDashApp-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		645E6029094FEEC82DD2CD00 /* Pods-SsvDashApp-SsvDashAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SsvDashApp-SsvDashAppTests.release.xcconfig"; path = "Target Support Files/Pods-SsvDashApp-SsvDashAppTests/Pods-SsvDashApp-SsvDashAppTests.release.xcconfig"; sourceTree = "<group>"; };
-		75F278440F74C062C7716F08 /* Pods-SsvDashApp-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SsvDashApp-tvOS.release.xcconfig"; path = "Target Support Files/Pods-SsvDashApp-tvOS/Pods-SsvDashApp-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		984A665B2796E01947FCA6C4 /* Pods-SsvDashApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SsvDashApp.release.xcconfig"; path = "Target Support Files/Pods-SsvDashApp/Pods-SsvDashApp.release.xcconfig"; sourceTree = "<group>"; };
-		A0CA4E373A333C3BA6188F5D /* libPods-SsvDashApp-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SsvDashApp-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A8B55086E973A08B5CFB83C8 /* Pods-SsvDashApp-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SsvDashApp-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-SsvDashApp-tvOSTests/Pods-SsvDashApp-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		DE1E0B0F9D6DD6E3B0503387 /* Pods-SsvDashApp-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SsvDashApp-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-SsvDashApp-tvOS/Pods-SsvDashApp-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		428C16C8061A1B43089A6FAC /* Pods-SsvDashApp-SsvDashAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SsvDashApp-SsvDashAppTests.debug.xcconfig"; path = "Target Support Files/Pods-SsvDashApp-SsvDashAppTests/Pods-SsvDashApp-SsvDashAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		55DD4EC2E4D6B71C38AE62D0 /* libPods-SsvDashApp-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SsvDashApp-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		61E4ECC5C702AE9AD6F3E880 /* libPods-SsvDashApp-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SsvDashApp-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		658B6CA31407600FA5947DA2 /* libPods-SsvDashApp-SsvDashAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SsvDashApp-SsvDashAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		933AE14BC659B177AD256651 /* Pods-SsvDashApp-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SsvDashApp-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-SsvDashApp-tvOSTests/Pods-SsvDashApp-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		E67E53E0E4607EA1F42E51A1 /* Pods-SsvDashApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SsvDashApp.debug.xcconfig"; path = "Target Support Files/Pods-SsvDashApp/Pods-SsvDashApp.debug.xcconfig"; sourceTree = "<group>"; };
+		E9DCA50AD3DB9BDCD19390BB /* libPods-SsvDashApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SsvDashApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		F16B38535074E18D96E45E19 /* libPods-SsvDashApp-SsvDashAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SsvDashApp-SsvDashAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C97C11639798393AD4F3556C /* libPods-SsvDashApp-SsvDashAppTests.a in Frameworks */,
+				CDDC7734B709FC16D0FD8BEA /* libPods-SsvDashApp-SsvDashAppTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FBEA994B4024A9CE7F62F8B /* libPods-SsvDashApp.a in Frameworks */,
+				87D41B8D5DD8B7EB11809201 /* libPods-SsvDashApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,7 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F872518A8DD976BBF46D675 /* libPods-SsvDashApp-tvOS.a in Frameworks */,
+				9679CFA139F0CF5EAF805465 /* libPods-SsvDashApp-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,7 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50A90FF1DDEF22918DCE136D /* libPods-SsvDashApp-tvOSTests.a in Frameworks */,
+				C58E5B2EF24C2F9984F0F7F1 /* libPods-SsvDashApp-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,10 +142,10 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				0141C620AE6F5D4F03C698C8 /* libPods-SsvDashApp.a */,
-				F16B38535074E18D96E45E19 /* libPods-SsvDashApp-SsvDashAppTests.a */,
-				18A912072CD5574D69789218 /* libPods-SsvDashApp-tvOS.a */,
-				A0CA4E373A333C3BA6188F5D /* libPods-SsvDashApp-tvOSTests.a */,
+				E9DCA50AD3DB9BDCD19390BB /* libPods-SsvDashApp.a */,
+				658B6CA31407600FA5947DA2 /* libPods-SsvDashApp-SsvDashAppTests.a */,
+				55DD4EC2E4D6B71C38AE62D0 /* libPods-SsvDashApp-tvOS.a */,
+				61E4ECC5C702AE9AD6F3E880 /* libPods-SsvDashApp-tvOSTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -187,14 +187,14 @@
 		C55C2CD04CAED551B99D8E86 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2D16AE8B1535BE5C70868F7B /* Pods-SsvDashApp.debug.xcconfig */,
-				984A665B2796E01947FCA6C4 /* Pods-SsvDashApp.release.xcconfig */,
-				1FB0CBBC82CFF62396CB21E1 /* Pods-SsvDashApp-SsvDashAppTests.debug.xcconfig */,
-				645E6029094FEEC82DD2CD00 /* Pods-SsvDashApp-SsvDashAppTests.release.xcconfig */,
-				DE1E0B0F9D6DD6E3B0503387 /* Pods-SsvDashApp-tvOS.debug.xcconfig */,
-				75F278440F74C062C7716F08 /* Pods-SsvDashApp-tvOS.release.xcconfig */,
-				A8B55086E973A08B5CFB83C8 /* Pods-SsvDashApp-tvOSTests.debug.xcconfig */,
-				308BD61CFF706FE3750BF2FC /* Pods-SsvDashApp-tvOSTests.release.xcconfig */,
+				E67E53E0E4607EA1F42E51A1 /* Pods-SsvDashApp.debug.xcconfig */,
+				03B9CDC35FA573EF254CB4B5 /* Pods-SsvDashApp.release.xcconfig */,
+				428C16C8061A1B43089A6FAC /* Pods-SsvDashApp-SsvDashAppTests.debug.xcconfig */,
+				1E4F165E7A4EDBEBCB88B85A /* Pods-SsvDashApp-SsvDashAppTests.release.xcconfig */,
+				2DC31AC3A49F352FEE1C264B /* Pods-SsvDashApp-tvOS.debug.xcconfig */,
+				0D19A83C171A2BCCF0FFEAEF /* Pods-SsvDashApp-tvOS.release.xcconfig */,
+				1406FB5B98F3B0A7E613BEF4 /* Pods-SsvDashApp-tvOSTests.debug.xcconfig */,
+				933AE14BC659B177AD256651 /* Pods-SsvDashApp-tvOSTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -213,12 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "SsvDashAppTests" */;
 			buildPhases = (
-				9010B76A48A43A03A72A9C98 /* [CP] Check Pods Manifest.lock */,
+				064770B862DA0564A0B7241C /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				FCF06948D3ECCA156CD711F2 /* [CP] Embed Pods Frameworks */,
-				2112C159DDC460D106B1284D /* [CP] Copy Pods Resources */,
+				B300988FB5DEA327671F8093 /* [CP] Embed Pods Frameworks */,
+				61D73A10D65C0B0F4C96601D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -234,14 +234,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "SsvDashApp" */;
 			buildPhases = (
-				27F3DBBB3951CB801C0F84D6 /* [CP] Check Pods Manifest.lock */,
+				62E2FC27D963516930CAD005 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				F8D75B74FDD56FA71660B748 /* [CP] Embed Pods Frameworks */,
-				8F1105E58E06EAE8FA579DFA /* [CP] Copy Pods Resources */,
+				E387BE1DB908164B36A6C290 /* [CP] Embed Pods Frameworks */,
+				80E16BF21209C8A3233261ED /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,7 +256,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "SsvDashApp-tvOS" */;
 			buildPhases = (
-				07B674D7D3ED46F731C7D9E7 /* [CP] Check Pods Manifest.lock */,
+				008567F739F881B6FCDD0676 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
 				2D02E4771E0B4A5D006451C7 /* Sources */,
 				2D02E4781E0B4A5D006451C7 /* Frameworks */,
@@ -276,7 +276,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "SsvDashApp-tvOSTests" */;
 			buildPhases = (
-				B7604C7E4202E15752A740FC /* [CP] Check Pods Manifest.lock */,
+				248E7C7BE72C946F55633ECF /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
 				2D02E48E1E0B4A5D006451C7 /* Resources */,
@@ -377,21 +377,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Bundle React Native code and images";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
-		};
-		07B674D7D3ED46F731C7D9E7 /* [CP] Check Pods Manifest.lock */ = {
+		008567F739F881B6FCDD0676 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -413,7 +399,79 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		2112C159DDC460D106B1284D /* [CP] Copy Pods Resources */ = {
+		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		064770B862DA0564A0B7241C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SsvDashApp-SsvDashAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		248E7C7BE72C946F55633ECF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SsvDashApp-tvOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native Code And Images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		61D73A10D65C0B0F4C96601D /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -467,7 +525,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SsvDashApp-SsvDashAppTests/Pods-SsvDashApp-SsvDashAppTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		27F3DBBB3951CB801C0F84D6 /* [CP] Check Pods Manifest.lock */ = {
+		62E2FC27D963516930CAD005 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -489,21 +547,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Bundle React Native Code And Images";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
-		};
-		8F1105E58E06EAE8FA579DFA /* [CP] Copy Pods Resources */ = {
+		80E16BF21209C8A3233261ED /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -557,69 +601,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SsvDashApp/Pods-SsvDashApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9010B76A48A43A03A72A9C98 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SsvDashApp-SsvDashAppTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B7604C7E4202E15752A740FC /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SsvDashApp-tvOSTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F8D75B74FDD56FA71660B748 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SsvDashApp/Pods-SsvDashApp-frameworks.sh",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL-Universal/OpenSSL.framework/OpenSSL",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenSSL.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SsvDashApp/Pods-SsvDashApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FCF06948D3ECCA156CD711F2 /* [CP] Embed Pods Frameworks */ = {
+		B300988FB5DEA327671F8093 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -635,6 +617,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SsvDashApp-SsvDashAppTests/Pods-SsvDashApp-SsvDashAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E387BE1DB908164B36A6C290 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SsvDashApp/Pods-SsvDashApp-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL-Universal/OpenSSL.framework/OpenSSL",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenSSL.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SsvDashApp/Pods-SsvDashApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -743,7 +743,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1FB0CBBC82CFF62396CB21E1 /* Pods-SsvDashApp-SsvDashAppTests.debug.xcconfig */;
+			baseConfigurationReference = 428C16C8061A1B43089A6FAC /* Pods-SsvDashApp-SsvDashAppTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -766,7 +766,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 645E6029094FEEC82DD2CD00 /* Pods-SsvDashApp-SsvDashAppTests.release.xcconfig */;
+			baseConfigurationReference = 1E4F165E7A4EDBEBCB88B85A /* Pods-SsvDashApp-SsvDashAppTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -786,7 +786,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2D16AE8B1535BE5C70868F7B /* Pods-SsvDashApp.debug.xcconfig */;
+			baseConfigurationReference = E67E53E0E4607EA1F42E51A1 /* Pods-SsvDashApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -803,7 +803,7 @@
 				INFOPLIST_FILE = SsvDashApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.3.0;
+				MARKETING_VERSION = 1.3.1;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -821,7 +821,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 984A665B2796E01947FCA6C4 /* Pods-SsvDashApp.release.xcconfig */;
+			baseConfigurationReference = 03B9CDC35FA573EF254CB4B5 /* Pods-SsvDashApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -833,7 +833,7 @@
 				INFOPLIST_FILE = SsvDashApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.3.0;
+				MARKETING_VERSION = 1.3.1;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -850,7 +850,7 @@
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE1E0B0F9D6DD6E3B0503387 /* Pods-SsvDashApp-tvOS.debug.xcconfig */;
+			baseConfigurationReference = 2DC31AC3A49F352FEE1C264B /* Pods-SsvDashApp-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -881,7 +881,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 75F278440F74C062C7716F08 /* Pods-SsvDashApp-tvOS.release.xcconfig */;
+			baseConfigurationReference = 0D19A83C171A2BCCF0FFEAEF /* Pods-SsvDashApp-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -911,7 +911,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A8B55086E973A08B5CFB83C8 /* Pods-SsvDashApp-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = 1406FB5B98F3B0A7E613BEF4 /* Pods-SsvDashApp-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -938,7 +938,7 @@
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 308BD61CFF706FE3750BF2FC /* Pods-SsvDashApp-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = 933AE14BC659B177AD256651 /* Pods-SsvDashApp-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
